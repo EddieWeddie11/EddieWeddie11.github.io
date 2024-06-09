@@ -21,93 +21,114 @@
         font-family: monospace;
         font-size: 15px;
       }
+
+      .screenshot {
+        max-width: 100%;
+        width: 900px;
+        height: auto;
+      }
     </style>
 
     <title>Technical Blog</title>
   </head>
   <body>
-    <h1>What are the best practices associated with using classes vs. ids?</h1>
+    <main>
+      <h1>
+        What are the best practices associated with using classes vs. ids?
+      </h1>
 
-    <h2>Class</h2>
-    <div>
-      <p>
-        In CSS, a class groups elements that are the same or similar. You can
-        include any number of elements in a class, and each element can belong
-        to multiple classes. Each class has specific CSS attributes, such as
-        color and font-size.
-      </p>
+      <h2>Class</h2>
+      <div>
+        <p>
+          In CSS, a class groups elements that are the same or similar. You can
+          include any number of elements in a class, and each element can belong
+          to multiple classes. Each class has specific CSS attributes, such as
+          color and font-size.
+        </p>
 
-      <p>
-        CSS classes are like a real-life class of students who share
-        similarities in age, area codes, interests, or life goals.
-      </p>
+        <p>
+          CSS classes are like a real-life class of students who share
+          similarities in age, area codes, interests, or life goals.
+        </p>
 
-      <p>
-        When inserting a class syntax, ensure the name you give the class
-        between quotation marks (“”) is distinct, the name you give it can be
-        literally anything.
-      </p>
+        <p>
+          When inserting a class syntax, ensure the name you give the class
+          between quotation marks (“”) is distinct, the name you give it can be
+          literally anything.
+        </p>
+        <br />
+        <h3>Syntax for class in the HTML</h3>
+        <p>h1 class= "example 1"</p>
+        <p>h2 class= "example 2"</p>
+
+        <p>
+          Syntax for class in the CSS Selector file (Use '.' (period symbol) for
+          identifying your class))
+        </p>
+
+        <p>.example {color: blue; font-size: 14px;}</p>
+      </div>
       <br />
-      <h3>Syntax for class in the HTML</h3>
-      <p>h1 class= "example 1"</p>
-      <p>h2 class= "example 2"</p>
+      <h2>ID</h2>
+      <div>
+        <p>
+          An ID uniquely identifies a single HTML tag, and each tag can only
+          have one ID. Every ID has specific CSS attributes that apply only to
+          that element.
+        </p>
 
-      <p>
-        Syntax for class in the CSS Selector file (Use '.' (period symbol) for
-        identifying your class))
-      </p>
+        <p>
+          In a real-life analogy, while students may share attributes, each has
+          a unique IRD Number or passport number that identifies them
+          individually.
+        </p>
 
-      <p>.example {color: blue; font-size: 14px;}</p>
-    </div>
-    <br />
-    <h2>IDs</h2>
-    <div>
-      <p>
-        An ID uniquely identifies a single HTML tag, and each tag can only have
-        one ID. Every ID has specific CSS attributes that apply only to that
-        element.
-      </p>
+        <p>
+          When inserting a class syntax, ensure the name you give the class
+          between quotation marks (“”) is distinct, the name you give it can be
+          literally anything.
+        </p>
 
-      <p>
-        In a real-life analogy, while students may share attributes, each has a
-        unique IRD Number or passport number that identifies them individually.
-      </p>
+        <br />
 
-      <p>
-        When inserting a class syntax, ensure the name you give the class
-        between quotation marks (“”) is distinct, the name you give it can be
-        literally anything.
-      </p>
+        <h3>Syntax for ID in the HTML</h3>
+        <p>h1 id= ”unique 1”</p>
+        <p>h2 id= ”unique 2”</p>
 
+        <p>
+          Syntax for ID in the CSS Selector file (Use ‘#’ for identifying your
+          ID)
+        </p>
+        <p>#unique {color: red; font-size: 16px;}</p>
+
+        <br />
+
+        <h2>Best practices</h2>
+        <li>
+          Use an ID when you need to style one specific, unique element on a
+          page
+        </li>
+        <li>
+          Use a class when you need to style multiple elements with the same or
+          similar styling
+        </li>
+        <li>
+          IDs are for single, unique items, while classes are for groups of
+          items that share styles
+        </li>
+        <li>
+          Keep IDs distinct to avoid any conflicts and ensure clear,
+          maintainable code
+        </li>
+      </div>
       <br />
-
-      <h3>Syntax for ID in the HTML</h3>
-      <p>h1 id= ”unique 1”</p>
-      <p>h2 id= ”unique 2”</p>
-
-      <p>
-        Syntax for ID in the CSS Selector file (Use ‘#’ for identifying your ID)
-      </p>
-      <p>#unique {color: red; font-size: 16px;}</p>
-
-      <br />
-
-      <h2>Best practices</h2>
-      <li>
-        Use an ID when you need to style one specific, unique element on a page
-      </li>
-      <li>
-        Use a class when you need to style multiple elements with the same or
-        similar styling
-      </li>
-      <li>
-        IDs are for single, unique items, while classes are for groups of items
-        that share styles
-      </li>
-      <li>
-        Keep IDs distinct to avoid any conflicts and ensure clear, maintainable
-        code
-      </li>
-    </div>
+      <h2>Code Examples for IDs and Class</h2>
+      <img class="screenshot" src="id example.png" alt="Description of image" />
+      <img
+        class="screenshot"
+        src="class example.png"
+        alt="Description of image"
+      />
+    </main>
   </body>
 </html>
