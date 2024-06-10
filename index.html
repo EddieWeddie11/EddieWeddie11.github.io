@@ -1,39 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edward's Blog</title>
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <header>
-      <h1>Welcome to My Website</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <h1>Edward's Blog</h1>
+      </div>
     </header>
-    <main>
-      <section>
-        <h2>About Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+
+    <main class="container">
+      <section class="posts">
+        <article class="post">
+          <h2>Te Houtaewa Template Blog</h2>
+          <img src="post1.jpg" alt="Post 1 Image" />
+          <p>Paragraph 1</p>
+          <a
+            href="\\wsl.localhost\Ubuntu\home\edward\devacademy\eddieweddie11.github.io\blog\te-houtaewa-template.html"
+            class="read-more"
+            >Read More</a
+          >
+        </article>
+
+        <article class="post">
+          <h2>Blog Post Title 2</h2>
+          <img src="post2.jpg" alt="Post 2 Image" />
+          <p>Paragraph 2</p>
+          <a href="post2.html" class="read-more">Read More</a>
+        </article>
       </section>
-      <section>
-        <h2>Our Services</h2>
-        <ul>
-          <li>Service 1</li>
-          <li>Service 2</li>
-          <li>Service 3</li>
-        </ul>
-        <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
-      </section>
-      <section>
+    </main>
   </body>
 </html>
